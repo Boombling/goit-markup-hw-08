@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -8,8 +9,8 @@ html {
 }
 
 body {
-  background-color: $primayry-white-color;
-  color: $primayry-text-color;
+  background-color: var(--primayry-white-color);
+  color: var(--primayry-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -19,20 +20,25 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 button {
   font-family: inherit;
 }
+
 address {
   font-style: normal;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -40,7 +46,9 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .list {
   padding: 0;
   margin: 0;
 }
+/*# sourceMappingURL=common.css.map */
