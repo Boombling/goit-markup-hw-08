@@ -137,7 +137,18 @@
   fill: $accent-color;
 }
 
-@include for-size(tablet) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .news {
+    display: block;
+  }
+  .news-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 @include for-size(desktop) {
   .news {

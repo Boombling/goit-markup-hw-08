@@ -62,7 +62,21 @@
   background-color: $accent-color;
 }
 
-@include for-size(tablet) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .address-info {
+    width: 50%;
+  }
+  .social {
+    width: 50%;
+  }
+  .news {
+    width: 100%;
+    // display: block;
+  }
 }
 
 @include for-size(desktop) {

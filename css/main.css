@@ -17,7 +17,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: solid 2px red;
 }
 
 body {
@@ -83,12 +82,15 @@ img {
 }
 
 .logo {
+  display: inline-flex;
   color: #212121;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo-web {
@@ -374,6 +376,20 @@ img {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .news {
+    display: block;
+  }
+  .news-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media (min-width: 1200px) {
   .news {
     margin-left: 100px;
@@ -385,14 +401,8 @@ img {
   }
 }
 
-.main-nav {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-}
-
 .site-nav {
-  display: inline-flex;
+  display: none;
   margin-left: 93px;
 }
 
@@ -437,6 +447,39 @@ img {
   border-radius: 2px;
 }
 
+.mobile-menu-btn {
+  display: none;
+  width: 45px;
+  height: 45px;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu-btn {
+    display: flex;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  .mobile-menu {
+    display: block;
+    text-align: center;
+    background-color: papayawhip;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+  }
+  .site-nav {
+    display: inline-flex;
+  }
+}
+
 .contacts-nav {
   display: flex;
   align-items: center;
@@ -466,7 +509,7 @@ img {
 }
 
 .contacts-mail {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -485,7 +528,7 @@ img {
 }
 
 .contacts-phone {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -501,6 +544,13 @@ img {
 .contacts-phone:hover .phone,
 .contacts-phone:focus .phone {
   fill: #2196f3;
+}
+
+@media (min-width: 768px) {
+  .contacts-mail,
+  .contacts-phone {
+    display: flex;
+  }
 }
 
 .section {
@@ -695,7 +745,6 @@ img {
 }
 
 .team-item {
-  margin-left: 30px;
   margin-bottom: 30px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -894,6 +943,22 @@ img {
 .icon-link:hover,
 .icon-link:focus {
   background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .address-info {
+    width: 50%;
+  }
+  .social {
+    width: 50%;
+  }
+  .news {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {

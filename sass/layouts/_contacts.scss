@@ -24,7 +24,7 @@
   color: $accent-color;
 }
 .contacts-mail {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -40,7 +40,7 @@
   fill: $accent-color;
 }
 .contacts-phone {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -54,4 +54,13 @@
 .contacts-phone:hover .phone,
 .contacts-phone:focus .phone {
   fill: $accent-color;
+}
+
+@include for-size(tablet) {
+  .contacts-mail,
+  .contacts-phone {
+    display: flex;
+  }
+}
+@include for-size(desktop) {
 }

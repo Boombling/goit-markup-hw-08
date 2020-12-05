@@ -1,10 +1,13 @@
 .logo {
+  display: inline-flex;
   color: $primayry-text-color;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .logo-web {
   color: $accent-color;
