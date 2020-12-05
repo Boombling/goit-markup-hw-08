@@ -1,9 +1,4 @@
-@include for-size(mobile) {
-  .photo {
-    display: none;
-  }
-}
-@include for-size(tablet) {
+@media screen and (max-width: 1199px) {
   .photo {
     display: none;
   }
