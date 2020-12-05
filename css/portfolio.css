@@ -284,7 +284,6 @@ img {
 
 .news {
   position: relative;
-  margin-left: 100px;
   /* display: inline-block; */
 }
 
@@ -297,8 +296,8 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  width: 300px;
-  margin-right: 12px;
+  width: 450px;
+  margin-bottom: 20px;
   color: #ffffff;
   outline: none;
 }
@@ -319,6 +318,17 @@ img {
 .news-btn:hover .news-icon,
 .news-btn:focus .news-icon {
   fill: #2196f3;
+}
+
+@media (min-width: 1200px) {
+  .news {
+    margin-left: 100px;
+  }
+  .news-form {
+    margin-right: 12px;
+    margin-bottom: 0;
+    width: 300px;
+  }
 }
 
 .main-nav {
@@ -440,17 +450,27 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section-title {
+    margin-bottom: 50px;
+  }
 }
 
 .page-header {
@@ -581,11 +601,17 @@ img {
 }
 
 .address {
+  justify-content: center;
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.address-info {
+  margin-bottom: 60px;
 }
 
 .address .logo {
@@ -599,7 +625,6 @@ img {
 }
 
 .address-link {
-  display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(255, 255, 255, 0.6);
 }
@@ -624,18 +649,17 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-align: start;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
 }
 
-.social-info {
-  display: flex;
-  align-items: baseline;
+.social {
+  margin-bottom: 60px;
 }
 
-.social {
-  margin-left: 100px;
+.social-info {
+  align-items: baseline;
 }
 
 .social .icon-link {
@@ -649,5 +673,20 @@ img {
 .icon-link:hover,
 .icon-link:focus {
   background-color: #2196f3;
+}
+
+@media (min-width: 1200px) {
+  .social-info {
+    display: flex;
+  }
+  .footer-title {
+    text-align: start;
+  }
+  .social-info {
+    display: flex;
+  }
+  .social {
+    margin-left: 100px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
