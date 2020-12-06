@@ -196,12 +196,13 @@ img {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 8px;
-  padding-bottom: 40px;
   transition: transform 1s;
 }
 
 .modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: block;
   width: 30px;
   height: 30px;
@@ -220,9 +221,14 @@ img {
   fill: #2196f3;
 }
 
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
 .form {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
 }
 
 .form-title {
