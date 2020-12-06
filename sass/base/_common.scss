@@ -5,7 +5,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: solid 2px red;
+  outline: solid 2px red;
 }
 
 body {
@@ -41,7 +41,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 
-  @include for-size(mobile) {
+  @include for-size(mobile-only) {
     width: 100%;
   }
 
