@@ -2,6 +2,8 @@
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
@@ -16,6 +18,9 @@
 .is-hidden .modal {
   transform: translate(-50%, 0%) scale(0.5);
 }
+.modal-form {
+  padding: 40px;
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -28,7 +33,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 1s;
-  // padding: 40px;
+  padding: 40px;
 }
 .modal-button {
   position: absolute;
@@ -50,7 +55,11 @@
 .modal-button:focus {
   fill: $accent-color;
 }
-
+// .scroll {
+//   max-width: 100%;
+//   position: relative;
+//   padding: 20px;
+// }
 @include for-size(desktop) {
   .modal {
     width: 528px;

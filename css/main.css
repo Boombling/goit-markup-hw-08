@@ -170,6 +170,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
@@ -187,6 +189,10 @@ img {
   transform: translate(-50%, 0%) scale(0.5);
 }
 
+.modal-form {
+  padding: 40px;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -198,6 +204,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 1s;
+  padding: 40px;
 }
 
 .modal-button {
@@ -226,10 +233,6 @@ img {
   .modal {
     width: 528px;
   }
-}
-
-.form {
-  padding: 40px;
 }
 
 .form-title {
@@ -287,6 +290,7 @@ img {
 
 .checkbox {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
