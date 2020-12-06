@@ -31,3 +31,12 @@
   color: $primayry-white-color;
   background-color: $accent-color;
 }
+
+@include for-size(mobile-only) {
+  .filter-list {
+    text-align: start;
+  }
+  .filter-item {
+    margin-bottom: 15px;
+  }
+}

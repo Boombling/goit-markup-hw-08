@@ -17,7 +17,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: solid 2px red;
 }
 
 body {
@@ -671,6 +670,15 @@ img {
 .tabs-link:focus {
   color: #ffffff;
   background-color: #2196f3;
+}
+
+@media (max-width: 767px) {
+  .filter-list {
+    text-align: start;
+  }
+  .filter-item {
+    margin-bottom: 15px;
+  }
 }
 
 .practics-list {
