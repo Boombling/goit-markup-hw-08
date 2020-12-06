@@ -9,16 +9,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 600px;
+  height: 400px;
 }
 
 .hero-container {
   position: absolute;
-  max-width: 700px;
+  width: 360px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  opacity: 1;
 }
 
 .hero-title {
@@ -26,9 +27,24 @@
   margin-bottom: 30px;
   color: $primayry-white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@include for-size(tablets) {
+}
+@include for-size(desktop) {
+  .hero {
+    height: 600px;
+  }
+  .hero-container {
+    max-width: 700px;
+  }
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
