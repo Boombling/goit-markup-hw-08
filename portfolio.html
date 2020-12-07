@@ -86,23 +86,18 @@
          <ul class="filter-list">
              <li class="filter-item">
                  <button type="button" class="tabs-link">Все</button>
-                 <!-- <a class="tabs-link" href="">Все</a> -->
              </li>
              <li class="filter-item">
                 <button type="button" class="tabs-link">Веб-сайты</button>
-                 <!-- <a class="tabs-link" href="">Веб-сайты</a> -->
              </li>
              <li class="filter-item">
                  <button type="button" class="tabs-link">Приложения</button>
-                 <!-- <a class="tabs-link" href="">Приложения</a> -->
              </li>
              <li class="filter-item">
                  <button type="button" class="tabs-link">Дизайн</button>
-                <!-- <a class="tabs-link" href="">Дизайн</a> -->
              </li>
-             <li class="filter-item"    >
+             <li class="filter-item">
                  <button type="button" class="tabs-link">Маркетинг</button>
-                <!-- <a class="tabs-link" href="">Маркетинг</a> -->
              </li>       
          </ul>
         </div>
@@ -116,7 +111,12 @@
             <li class="practics-item">
                 <a class="practics-link" href="">
                     <div class="overlay">
-                        <img class="work-img" src="./image/work-pages/tehno.jpg" alt="Сайт технокряк" width="370">
+                        <picture>
+                            <source srcset="./image/work-pages/img-1-desktop.jpg 1x, ./image/work-pages/img-1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./image/work-pages/img-1-tablet.jpg 1x, ./image/work-pages/img-1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./image/work-pages/img-1-mobile.jpg 1x, ./image/work-pages/img-1-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                            <img class="work-img" src="./image/work-pages/tehno.jpg" alt="Сайт технокряк">
+                        </picture>
                         <p class="work-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.</p>
