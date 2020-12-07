@@ -883,9 +883,10 @@ img {
   background-color: #f5f4fa;
 }
 
-.team-img {
-  margin-left: auto;
-  margin-right: auto;
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team-item {
@@ -917,8 +918,6 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-list {
-    display: flex;
-    flex-wrap: wrap;
     margin-left: -30px;
     justify-content: space-between;
   }
@@ -930,8 +929,6 @@ img {
 
 @media (min-width: 1200px) {
   .team-list {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
   .team-item {
