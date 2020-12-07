@@ -1,8 +1,9 @@
 .practics-list {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .practics-item {
-  width: 100%;
   margin-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -47,8 +48,7 @@
   position: absolute;
   margin: 0;
   width: 100%;
-  max-width: 370px;
-  height: 294px;
+  min-height: 295px;
   padding: 63px 24px;
   top: 0;
   left: 0;
@@ -76,8 +76,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .practics-list {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: stretch;
   }
   .practics-item {
     width: 354px;
@@ -89,10 +88,6 @@
   }
 }
 @include for-size(desktop) {
-  .practics-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .practics-item {
     width: 370px;
     margin-left: 30px;

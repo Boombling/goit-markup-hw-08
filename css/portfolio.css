@@ -684,11 +684,12 @@ img {
 }
 
 .practics-list {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .practics-item {
-  width: 100%;
   margin-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -738,8 +739,7 @@ img {
   position: absolute;
   margin: 0;
   width: 100%;
-  max-width: 370px;
-  height: 294px;
+  min-height: 295px;
   padding: 63px 24px;
   top: 0;
   left: 0;
@@ -763,8 +763,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .practics-list {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: stretch;
   }
   .practics-item {
     width: 354px;
@@ -777,10 +776,6 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .practics-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .practics-item {
     width: 370px;
     margin-left: 30px;
